@@ -1,3 +1,4 @@
+# Time: O(log n); Space: O(1)
 def search_insert(nums, target):
     low, high = 0, len(nums) - 1
 
@@ -15,6 +16,6 @@ def search_insert(nums, target):
     return low
 
 
-#
+# Test cases:
 print(search_insert([1, 3, 5, 6], 2))
 print(search_insert([1, 3, 5, 6], 7))
