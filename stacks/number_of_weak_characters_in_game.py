@@ -1,3 +1,4 @@
+# Time: O(n log n); Space: O(n)
 def number_of_weak_characters(properties):
     properties.sort(key=lambda x: (-x[0], x[1]))
     count, stack = 0, []
@@ -14,6 +15,7 @@ def number_of_weak_characters(properties):
     return count
 
 
+# Test cases:
 print(number_of_weak_characters([[5,5],[6,3],[3,6]]))
 print(number_of_weak_characters([[2,2],[3,3]]))
 print(number_of_weak_characters([[1,5],[10,4],[4,3]]))
