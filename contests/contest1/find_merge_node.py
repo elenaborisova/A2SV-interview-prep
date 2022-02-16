@@ -8,10 +8,10 @@ class SinglyLinkedListNode:
 
 
 def findMergeNode(head1, head2):
-    ll1_nodes = []
+    ll1_nodes = set()
 
     while head1:
-        ll1_nodes.append(head1)
+        ll1_nodes.add(head1)
         head1 = head1.next
 
     while head2:
