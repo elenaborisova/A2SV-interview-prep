@@ -1,4 +1,4 @@
-# 14:43
+# Time: O(n); Space: O(1)
 def max_profit(prices):
     buy_price = prices[0]
     max_p = 0
